@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>co.insou</groupId>
+  <artifactId>obfuscator-asm</artifactId>
+  <version>1.0</version>
+  <build>
+    <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
+    <defaultGoal>clean compile package</defaultGoal>
+    <resources>
+      <resource>
+        <directory>${basedir}/src/main/resources</directory>
+      </resource>
+    </resources>
+    <finalName>${project.artifactId}_v${project.version}</finalName>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.3</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+          <encoding>UTF-8</encoding>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-shade-plugin</artifactId>
+        <version>3.0.0</version>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>shade</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <transformers>
+            <transformer>
+              <mainClass>co.insou.obfuscator.Main</mainClass>
+            </transformer>
+          </transformers>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
+

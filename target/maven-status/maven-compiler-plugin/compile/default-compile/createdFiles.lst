@@ -1,0 +1,6 @@
+co/insou/obfuscator/transformers/ClassTransformer.class
+co/insou/obfuscator/transformers/SymbolRenamer.class
+co/insou/obfuscator/transformers/RandomGarbageAdder.class
+co/insou/obfuscator/transformers/LineNumberObfuscator.class
+co/insou/obfuscator/Main.class
+co/insou/obfuscator/transformers/TheFuckinator.class

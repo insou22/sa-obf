@@ -1,0 +1,6 @@
+/home/zac/IdeaProjects/obfuscator-asm/src/main/java/co/insou/obfuscator/Main.java
+/home/zac/IdeaProjects/obfuscator-asm/src/main/java/co/insou/obfuscator/transformers/SymbolRenamer.java
+/home/zac/IdeaProjects/obfuscator-asm/src/main/java/co/insou/obfuscator/transformers/TheFuckinator.java
+/home/zac/IdeaProjects/obfuscator-asm/src/main/java/co/insou/obfuscator/transformers/LineNumberObfuscator.java
+/home/zac/IdeaProjects/obfuscator-asm/src/main/java/co/insou/obfuscator/transformers/ClassTransformer.java
+/home/zac/IdeaProjects/obfuscator-asm/src/main/java/co/insou/obfuscator/transformers/RandomGarbageAdder.java
