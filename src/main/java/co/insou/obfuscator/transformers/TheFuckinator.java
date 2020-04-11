@@ -322,8 +322,6 @@ public class TheFuckinator implements ClassTransformer {
         return newNode;
     }
 
-
-
     public static String encode(String s, String key) {
         return base64Encode(xorWithKey(s.getBytes(), key.getBytes()));
     }
