@@ -111,6 +111,7 @@ public class Main {
                     node = new TheFuckinator().transform(node);
                 } catch (IllegalArgumentException ex)
                 {
+                    ex.printStackTrace();
                     break;
                 }
 

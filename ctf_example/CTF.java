@@ -45,7 +45,6 @@ public class CTF {
     private static String base64Encode(byte[] bytes) {
         BASE64Encoder enc = new BASE64Encoder();
         return enc.encode(bytes).replaceAll("\\s", "");
-
     }
 
     public static void main(String[] args) throws NoSuchAlgorithmException
