@@ -23,9 +23,6 @@ public class TheFuckinator implements ClassTransformer {
 
         cw.visit(Opcodes.V1_8, Opcodes.ACC_PUBLIC + Opcodes.ACC_SUPER, node.name, null, "java/lang/ClassLoader", null);
 
-        // TODO: remove?
-        cw.visitSource(node.name + ".java", null);
-
         {
             fv = cw.visitField(Opcodes.ACC_PRIVATE, "extraClassDefs", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/String;[B>;", null);
             fv.visitEnd();
